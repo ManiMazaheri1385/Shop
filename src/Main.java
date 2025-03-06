@@ -6,7 +6,7 @@ public class Main {
         RegularCustomer regularCustomer2 = new RegularCustomer("Patrick");
         PremiumCustomer premiumCustomer = new PremiumCustomer("Squidward");
 
-        CreditCardPayment creditCardPayment = null;
+        CreditCardPayment creditCardPayment;
         PayPalPayment payPalPayment;
         BitcoinPayment bitcoinPayment;
 
