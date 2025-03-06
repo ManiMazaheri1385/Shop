@@ -9,7 +9,7 @@ public class RegularCustomer extends Customer {
     @Override
     public void displayCustomerInfo() {
         System.out.println("Customer Information:"
-                + "\nCustomer type: Regular"
-                + "\nCustomer name: " + name);
+                + "\n   Customer type: Regular"
+                + "\n   Customer name: " + name);
     }
 }

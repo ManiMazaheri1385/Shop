@@ -14,11 +14,14 @@ public abstract class Customer {
     public abstract void displayCustomerInfo();
 
     public void makePayment(PaymentStrategy paymentStrategy, double amount) {
+
         paymentStrategy.pay(amount);
-        paymentHistory.add(paymentStrategy.getPaymentDetails());
+        paymentHistory.add(paymentStrategy.getPaymentDetails() + amount);
     }
 
     public void showPaymentHistory() {
+        System.out.println(name + " payment history:");
+        System.out.println();
         for (String history : paymentHistory) {
             System.out.println(history);
         }

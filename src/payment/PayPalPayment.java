@@ -9,13 +9,13 @@ public class PayPalPayment implements PaymentStrategy{
 
     @Override
     public void pay(double amount) {
-        System.out.println(getPaymentDetails());
-        System.out.println("Amount paid: " + amount);
+        System.out.println(getPaymentDetails() + amount);
     }
 
     @Override
     public String getPaymentDetails() {
         return "PayPal payment details:"
-                + "\nEmail: " + email;
+                + "\n   Email: " + email
+                + "\n   Amount paid: "+ "$";
     }
 }

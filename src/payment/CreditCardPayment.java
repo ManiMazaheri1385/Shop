@@ -11,14 +11,14 @@ public class CreditCardPayment implements PaymentStrategy{
 
     @Override
     public void pay(double amount) {
-        System.out.println(getPaymentDetails());
-        System.out.println("Amount paid: " + amount);
+        System.out.println(getPaymentDetails() + amount);
     }
 
     @Override
     public String getPaymentDetails() {
         return "Credit card payment details:"
-                + "\nCard holder name: " + cardHolderName
-                + "\nCard number: " + cardNumber;
+                + "\n   Card holder name: " + cardHolderName
+                + "\n   Card number: " + cardNumber
+                + "\n   Amount paid: " + "$";
     }
 }

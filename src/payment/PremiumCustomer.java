@@ -9,7 +9,7 @@ public class PremiumCustomer extends Customer {
     @Override
     public void displayCustomerInfo() {
         System.out.println("Customer Information:"
-                + "\nCustomer type: Premium"
-                + "\nCustomer name: " + name);
+                + "\n   Customer type: Premium"
+                + "\n   Customer name: " + name);
     }
 }

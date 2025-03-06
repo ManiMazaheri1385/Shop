@@ -9,13 +9,13 @@ public class BitcoinPayment implements PaymentStrategy{
 
     @Override
     public void pay(double amount) {
-        System.out.println(getPaymentDetails());
-        System.out.println("Amount paid: " + amount);
+        System.out.println(getPaymentDetails() + amount);
     }
 
     @Override
     public String getPaymentDetails() {
         return "Bitcoin payment details:"
-                + "\nWallet address: " + walletAddress;
+                + "\n   Wallet address: " + walletAddress
+                + "\n   Amount paid: "+ "₿";
     }
 }
