@@ -6,10 +6,6 @@ public class Main {
         RegularCustomer regularCustomer2 = new RegularCustomer("Patrick");
         PremiumCustomer premiumCustomer = new PremiumCustomer("Squidward");
 
-        CreditCardPayment creditCardPayment;
-        PayPalPayment payPalPayment;
-        BitcoinPayment bitcoinPayment;
-
         CreditCardPayment spongeBobCreditCardPayment = new CreditCardPayment("6037", regularCustomer1.name);
         PayPalPayment patrickPayPalPayment = new PayPalPayment(regularCustomer2.name + "@gmail.com");
         BitcoinPayment squidwardBitcoinPayment = new BitcoinPayment("Bikini Bottom Blue Moai Statue");
